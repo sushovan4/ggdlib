@@ -1,0 +1,22 @@
+{
+  "name": "ggdlib",
+  "version": "1.0.0",
+  "description": "Library to compute the Geometric Graph Distance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushovan4/ggdlib.git"
+  },
+  "author": "Sushovan Majhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushovan4/ggdlib/issues"
+  },
+  "homepage": "https://github.com/sushovan4/ggdlib#readme",
+  "devDependencies": {
+    "xml2js": "^0.4.23"
+  }
+}

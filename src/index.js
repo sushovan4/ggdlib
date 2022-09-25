@@ -1,0 +1,1 @@
+export { getVertices, getEdges, getAdjMat } from './utils/gxlObj';

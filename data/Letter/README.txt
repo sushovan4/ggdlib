@@ -1,6 +1,8 @@
 ======= TERMS OF USAGE ======= 
 
-The IAM-Graph DB is publicly accessible and freely available for non-commercial research purposes. If you are publishing scientific work based on the IAM-Graph DB, we request you to include the following reference to our database:
+The IAM-Graph DB is publicly accessible and freely available for non-commercial
+research purposes. If you are publishing scientific work based on the IAM-Graph
+DB, we request you to include the following reference to our database:
 
 @unpublished{riesen08iam,
 	Author = {Riesen, K. and Bunke, H.},
@@ -10,8 +12,24 @@ The IAM-Graph DB is publicly accessible and freely available for non-commercial 
 
 =======  DATA SET ======= 
 
-Each of the data sets available on this repository is divided into three disjoint subsets, which can be used for training, validation, and testing novel learning algorithms (train.cxl, valid.cxl, test.cxl). 
-This graph data set involves graphs that represent distorted letter drawings. We consider the 15 capital letters of the Roman alphabet that consist of straight lines only (A, E, F, H, I, K, L, M, N, T, V, W, X, Y, Z). For each class, a prototype line drawing is manually constructed. These prototype drawings are then converted into prototype graphs by representing lines by undirected edges and ending points of lines by nodes. Each node is labeled with a two-dimensional attribute giving its position relative to a reference coordinate system. Edges are unlabeled. The graph database consists of a training set, a validation set, and a test set of size 750 each. The graphs are uniformly distributed over the 15 classes. In order to test classifiers under different conditions, distortions are applied on the prototype graphs with three different levels of strength, viz. low, medium and high. Hence, our experimental data set comprises 6,750 graphs altogether. The classification rates achieved on this data set are 99.6% (low), 94.0% (medium), and 90.0% (high). In sample.eps the prototype graph and a graph instance for each distortion level representing the letter A are illustrated.
+Each of the data sets available on this repository is divided into three
+disjoint subsets, which can be used for training, validation, and testing novel
+learning algorithms (train.cxl, valid.cxl, test.cxl). This graph data set
+involves graphs that represent distorted letter drawings. We consider the 15
+capital letters of the Roman alphabet that consist of straight lines only (A, E,
+F, H, I, K, L, M, N, T, V, W, X, Y, Z). For each class, a prototype line drawing
+is manually constructed. These prototype drawings are then converted into
+prototype graphs by representing lines by undirected edges and ending points of
+lines by nodes. Each node is labeled with a two-dimensional attribute giving its
+position relative to a reference coordinate system. Edges are unlabeled. The
+graph database consists of a training set, a validation set, and a test set of
+size 750 each. The graphs are uniformly distributed over the 15 classes. In
+order to test classifiers under different conditions, distortions are applied on
+the prototype graphs with three different levels of strength, viz. low, medium
+and high. Hence, our experimental data set comprises 6,750 graphs altogether.
+The classification rates achieved on this data set are 99.6% (low), 94.0%
+(medium), and 90.0% (high). In sample.eps the prototype graph and a graph
+instance for each distortion level representing the letter A are illustrated.
 
 
 =======  REFERENCES ======= 
