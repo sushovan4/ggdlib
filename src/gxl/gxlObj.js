@@ -1,5 +1,8 @@
-function getEdges(gxlObj) {
-  return gxlObj.gxl.graph[0].edge.map((e) => ({
+function edges(gxlObj) {
+  const V = vertices(gxlObj);
+  if(!gxlObj.gxl.graph[0].edge)
+    return [];
+  return  gxlObj.gxl.graph[0].edge.map((e) => ({
     from: e.$.from,
     x1: V.find((v) => v.id === e.$.from).x,
     y1: V.find((v) => v.id === e.$.from).y,
@@ -8,7 +11,7 @@ function getEdges(gxlObj) {
     to: e.$.to
   }));
 }
-function getVertices(gxlObj) {
+function vertices(gxlObj) {
   return  gxlObj.gxl.graph[0].node.map((n) => {
     const out = {};
     out.id = n.$.id;
@@ -18,15 +21,18 @@ function getVertices(gxlObj) {
     return out;
   });
 }
-function getAdjMat(gxlObj) {
-  const V = getVertices(gxlObj);
+function adjMat(gxlObj) {
+  const V = vertices(gxlObj);
   const n = V.length;
-  const E = getEdges(gxlObj);
+  const E = edges(gxlObj);
   const mat = Array(n * n).fill(0);
-  return E.forEach( e => {
+  V.forEach( (v, i) => mat[n * i + i] = [v.x, v.y]);
+  E.forEach( e => {
     const i = V.findIndex( v => v.id === e.from);
     const j = V.findIndex( v => v.id === e.to);
     mat[n * i + j] = 1; mat[n * j + i] = 1;
   });
+  return mat;
 }
-export { getVertices, getEdges, getAdjMat }
+
+export { vertices, edges, adjMat };
