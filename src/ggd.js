@@ -1,6 +1,7 @@
 function ggd(adjMat1, adjMat2, C_V = 0.5, C_E = 1, i = 0, j = -1, 
   pi = Array(Math.sqrt(adjMat1.length))) {
   const m = Math.sqrt(adjMat1.length), n = Math.sqrt(adjMat2.length);
+
   if(i === m) {
     let cost = 0;
     pi.forEach( (j, i)  => {
@@ -28,7 +29,7 @@ function ggd(adjMat1, adjMat2, C_V = 0.5, C_E = 1, i = 0, j = -1,
             adjMat1[n * pi.indexOf(i) + pi.indexOf(j)] === 0)
         )
         // Edge deletion from V2
-        cost = cost + C_E * dist(adjMat2[n * i + i], adjMat2[n * j + j]);      
+        cost = cost + C_E * dist(adjMat2[n * i + i], adjMat2[n * j + j]);
       }  
     return cost;
   }
