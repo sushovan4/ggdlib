@@ -95,7 +95,6 @@ class Graph:
                 return index
         return -1
 
-
 class Point:
     ''' Supporting class for storing coordinates and labels of points.
     e.g:
