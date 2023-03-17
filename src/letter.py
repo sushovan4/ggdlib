@@ -1,9 +1,9 @@
-import math
 import os
 import json
 from EMD import GGMD
+import networkx as nx
 
-from graph import Graph, Point
+
 
 def letter(distortion, C_V, C_E, multiplier):
     PROTOTYPE = []
@@ -16,7 +16,7 @@ def letter(distortion, C_V, C_E, multiplier):
     for file in os.listdir(prototype_path):
         data = open(prototype_path + file)
         gxl = json.load(data)
-        PROTOTYPE.append((file[0], gxl2Graph(gxl)))
+        PROTOTYPE.append((file[0], gxl2Graph(gxl, file[0])))
 
     for file in os.listdir(source_path):
         # todo: filter only json files
@@ -26,9 +26,9 @@ def letter(distortion, C_V, C_E, multiplier):
         gxl = json.load(data)
         g = gxl2Graph(gxl)
         match = {}
-
         for proto in PROTOTYPE:
-            d, flow = GGMD(g, proto[1], C_V, C_E, multiplier)    
+            d, flow, A = GGMD(g, proto[1], C_V, C_E, multiplier)  
+
             match[proto[0]] = d
         match = sorted(match.items(), key=lambda x: x[1])
         n_checks += 1
@@ -47,30 +47,33 @@ def letter(distortion, C_V, C_E, multiplier):
 
     return n_successes / n_checks * 100
 
-def gxl2Graph(gxl):
+def gxl2Graph(gxl, prefix = ''):
     vertices = []
     edges = []
     for n in gxl["gxl"]["graph"][0]["node"]:
         out = {}  
-        out["id"] = n["$"]["id"]
+        out["id"] = prefix + n["$"]["id"]
         for v in n["attr"]:
             out[v["$"]["name"]] = float(v["float"][0])
-        p = Point((out["x"], out["y"]), out["id"])
-        vertices.append(p)
+
+        vertices.append( (out["id"], { "coords": (out["x"], out["y"]) }) )
     
     if "edge" in gxl["gxl"]["graph"][0]:        
         for e in gxl["gxl"]["graph"][0]["edge"]:
-            fr = next( filter(lambda p: p.label == e["$"]["from"], vertices) )
-            to = next( filter(lambda p: p.label == e["$"]["to"], vertices) )
-            edges.append([fr, to])
+            fr = next( filter(lambda p: p[0] == prefix + e["$"]["from"], vertices) )[0]
+            to = next( filter(lambda p: p[0] == prefix + e["$"]["to"], vertices) )[0]
+            edges.append((fr, to))
 
-    return Graph(vertices, edges)
+    G = nx.Graph()
+    G.add_nodes_from(vertices)
+    G.add_edges_from(edges)
+    return G
 
 
 def main():
     C_V = 2
     C_E = 1
-    print( letter('LOW', C_V, C_E, 100000) )
+    print( letter('MED', C_V, C_E, 1000) )
 
 #for i in range(100):
 #    for j in range(100):
