@@ -1,9 +1,8 @@
 import os
 import json
 from EMD import GGMD
-import networkx as nx
-
-
+from ggd import ggd
+from graph import Point, Graph
 
 def letter(distortion, C_V, C_E, multiplier):
     PROTOTYPE = []
@@ -28,7 +27,8 @@ def letter(distortion, C_V, C_E, multiplier):
         match = {}
         for proto in PROTOTYPE:
             d, flow, A = GGMD(g, proto[1], C_V, C_E, multiplier)  
-
+            # d, flow = ggd(g, proto[1], C_V, C_E)  
+            
             match[proto[0]] = d
         match = sorted(match.items(), key=lambda x: x[1])
         n_checks += 1
@@ -36,7 +36,9 @@ def letter(distortion, C_V, C_E, multiplier):
             n_successes += 1
             # print("S", file, match)
         else:
-            print("F", file, match)
+            pass
+            #print("F", file, match)
+
 
         for k, v in flow.items():
             if k != "eps1" and k != "eps2":
@@ -44,7 +46,7 @@ def letter(distortion, C_V, C_E, multiplier):
                     for v1 in v.values():
                         if v1 != 0 and v1 != multiplier:
                             print(flow)
-
+    print(C_V, C_E, n_successes / n_checks * 100)
     return n_successes / n_checks * 100
 
 def gxl2Graph(gxl, prefix = ''):
@@ -56,30 +58,25 @@ def gxl2Graph(gxl, prefix = ''):
         for v in n["attr"]:
             out[v["$"]["name"]] = float(v["float"][0])
 
-        vertices.append( (out["id"], { "coords": (out["x"], out["y"]) }) )
+        vertices.append( Point((out["x"], out["y"]), out["id"]) )
     
     if "edge" in gxl["gxl"]["graph"][0]:        
         for e in gxl["gxl"]["graph"][0]["edge"]:
-            fr = next( filter(lambda p: p[0] == prefix + e["$"]["from"], vertices) )[0]
-            to = next( filter(lambda p: p[0] == prefix + e["$"]["to"], vertices) )[0]
+            fr = next( filter(lambda p: p.label == prefix + e["$"]["from"], vertices) )
+            to = next( filter(lambda p: p.label == prefix + e["$"]["to"], vertices) )
             edges.append((fr, to))
 
-    G = nx.Graph()
-    G.add_nodes_from(vertices)
-    G.add_edges_from(edges)
-    return G
+    return Graph(vertices, edges)
 
 
 def main():
-    C_V = 2
-    C_E = 1
-    print( letter('MED', C_V, C_E, 1000) )
-
-#for i in range(100):
-#    for j in range(100):
-#        C_V = i / 100.0 * 5
-#        C_E = j / 100.0 * 5
-#        print( C_V, C_E, letter('LOW', C_V, C_E) )
+    for i in range(10):
+        for j in range(10):
+            C_V = i / 10.0 * 5
+            C_E = j / 10.0 * 5
+            print(C_V, C_E, letter('LOW', C_V, C_E, 10000))
+    #C_V, C_E = 2, 1
+    #letter('LOW', C_V, C_E, 10000)
 
 if __name__ == "__main__":
     main()

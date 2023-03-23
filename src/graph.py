@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+from functools import cmp_to_key
 import numpy as np
+import networkx as nx
 
 class Graph:
     """class defining a geometric graph"""
@@ -54,6 +56,9 @@ class Graph:
 
         return dict(zip(range(len(cmpts)), cmpts))
 
+    def vertex_positions(self):
+        return [np.array(u.coords) for u in self.vertices]
+
     def neighbors(self, v):
         ''' Neighbors of vertex v. '''
         nbrs = []
@@ -95,6 +100,16 @@ class Graph:
                 return index
         return -1
 
+    def sort(self):
+        self.vertices.sort(key = cmp_to_key(compare))
+
+    def toNX(self):
+        G = nx.Graph()
+        G.add_nodes_from([(u.label, { "coords": u.coords }) for u in self.vertices])
+        G.add_edges_from([[e[0].label, e[1].label] for e in self.edges])
+
+        return G
+
 class Point:
     ''' Supporting class for storing coordinates and labels of points.
     e.g:
@@ -128,3 +143,15 @@ class Point:
             return np.linalg.norm(p1 - p2)
 
         return distance(self, p) < eps
+    
+def compare(u: Point, v: Point):
+    if u.coords[0] < v.coords[0]:
+        return -1
+    elif u.coords[0] > v.coords[0]:
+        return 1
+    else:
+        if u.coords[1] < v.coords[1]:
+            return -1
+        elif u.coords[1] > v.coords[1]:
+            return 1        
+    return 0

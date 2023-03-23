@@ -3,38 +3,99 @@
 
 import numpy as np
 import networkx as nx
-from networkx.classes import Graph
+from graph import Graph
 
 def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier):
-    if g1.order() < g2.order():
+    if g1.n < g2.n:
         g1, g2 = g2, g1
     # todo: check if the graphs live in the same ambient
-    n1, n2 = g1.order(), g2.order()
+
+    # Order lexicographically
+    g1.sort()
+    g2.sort()
+    n1, n2 = g1.n, g2.n
+    m1, m2 = g1.adjacency(), g2.adjacency()
 
     G = nx.DiGraph()
-    sig1, sig2 = signature(g1), signature(g2, n1 - n2)
 
-    for i in range(n1):
-        G.add_node(sig1[i][2], demand = -1 * multiplier)
+    for u in g1.vertices:
+        G.add_node(u.label, demand = -1 * multiplier)
 
     G.add_node("eps1", demand = -n2 * multiplier)
 
-    for i in range(n2):
-        G.add_node(sig2[i][2], demand = 1 * multiplier)
+    for v in g2.vertices:
+        G.add_node(v.label, demand = 1 * multiplier)
     
     G.add_node("eps2", demand = n1 * multiplier)
 
     for i in range(n1):
+        u = g1.vertices[i]
         for j in range(n2):
-            weight = C_V * np.linalg.norm( sig1[i][0] - sig2[j][0] )
-            weight += 0.5 * C_E * np.linalg.norm(sig1[i][1] - sig2[j][1], ord = np.inf)
-            G.add_edge(sig1[i][2] , sig2[j][2], weight = round( weight * multiplier) )
-        weight = 0.5 * C_E * np.sum( sig1[i][1] )
-        G.add_edge(sig1[i][2], "eps2", weight = round( weight * multiplier))
+            v = g2.vertices[j]
+            # Compute ground cost
+            weight = C_V * np.linalg.norm( np.array(u.coords) - np.array(v.coords))
+            l1, l2 = 0, 0
+
+            for k in range(n1):
+                m = 0
+                w = g1.vertices[k]
+                if k >= n2:
+                    if m1[i, k] ==  1:
+                        m = np.linalg.norm( np.array(u.coords) - np.array(w.coords))
+                    continue
+                
+                x = g2.vertices[k]
+                if m1[i, k] == 1 and m2[j, k] == 1:
+                    m = abs(
+                        np.linalg.norm( np.array(u.coords) - np.array(w.coords)) -
+                        np.linalg.norm( np.array(v.coords) - np.array(x.coords))
+                    )
+                elif m1[i, k] == 0 and m2[j, k] == 1:
+                    m = np.linalg.norm( np.array(v.coords) - np.array(x.coords))
+                elif m1[i, k] == 1 and m2[j, k] == 0:
+                    m = np.linalg.norm( np.array(u.coords) - np.array(w.coords))
+           
+                l1 = max(l1, m) 
+
+            for k in range(n1):
+                m = 0
+                if m1[i, k] ==  0:
+                    continue
+                
+                w = g1.vertices[k]
+                for o in range(n2):
+                    if m2[j, o] == 0:
+                        continue
+                
+                    x = g2.vertices[o]
+                    m = abs(
+                        np.linalg.norm( np.array(u.coords) - np.array(w.coords)) -
+                        np.linalg.norm( np.array(v.coords) - np.array(x.coords))
+                    )
+                    l2 = max(l2, m)
+            
+            weight += 0.5 * C_E * l1
+            G.add_edge(u.label, v.label, weight = round( weight * multiplier) )
     
     for j in range(n2):
-        weight = 0.5 * C_E * np.sum( sig2[j][1] ) 
-        G.add_edge("eps1", sig2[j][2], weight = round( weight * multiplier))
+        l = 0
+        u = g2.vertices[j]
+        for k in range(n2):
+            if m2[j, k] == 1:
+                v =  g2.vertices[k]
+                l += np.linalg.norm( np.array(u.coords) - np.array(v.coords) )
+        weight = 0.5 * C_E * l
+        G.add_edge("eps1", u.label, weight = round( weight * multiplier))
+
+    for i in range(n1):
+        l = 0
+        u = g1.vertices[i]
+        for k in range(n1):
+            if m1[i, k] == 1:
+                v =  g1.vertices[k]
+                l += np.linalg.norm( np.array(u.coords) - np.array(v.coords) )
+        weight = 0.5 * C_E * l
+        G.add_edge(u.label, "eps2", weight = round( weight * multiplier))
     
     G.add_edge("eps1", "eps2", weight = 0)
 
@@ -43,15 +104,15 @@ def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier):
 
     return cost, flow, G
 
-def signature(g: Graph, offset = 0):
-    sig = []
-    for i in range(g.order()):
-        A = np.zeros(g.order() + offset)
-        u =  list(g.nodes)[i]
-        for j in range(g.order()):
-            v =  list(g.nodes)[j]
-            if g.has_edge(u, v):
-                A[j] = np.linalg.norm(np.array(g.nodes[u]["coords"]) - np.array(g.nodes[v]["coords"]))
-        sig.append( (np.array(g.nodes[u]["coords"]), A,  u) )
+# def signature(g: Graph, offset = 0):
+#     sig = []
+#     for i in range(g.order()):
+#         A = np.zeros(g.order() + offset)
+#         u =  list(g.nodes)[i]
+#         for j in range(g.order()):
+#             v =  list(g.nodes)[j]
+#             if g.has_edge(u, v):
+#                 A[j] = np.linalg.norm(np.array(g.nodes[u]["coords"]) - np.array(g.nodes[v]["coords"]))
+#         sig.append( (np.array(g.nodes[u]["coords"]), A,  u) )
 
-    return sig
+#     return sig
