@@ -11,8 +11,9 @@ def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier):
     # todo: check if the graphs live in the same ambient
 
     # Order lexicographically
-    g1.sort()
-    g2.sort()
+    g2.sortN(g1.vertices)
+
+
     n1, n2 = g1.n, g2.n
     m1, m2 = g1.adjacency(), g2.adjacency()
 
@@ -54,25 +55,25 @@ def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier):
                     m = np.linalg.norm( np.array(v.coords) - np.array(x.coords))
                 elif m1[i, k] == 1 and m2[j, k] == 0:
                     m = np.linalg.norm( np.array(u.coords) - np.array(w.coords))
-           
-                l1 = max(l1, m) 
 
-            for k in range(n1):
-                m = 0
-                if m1[i, k] ==  0:
-                    continue
+                l1 += m 
+
+            # for k in range(n1):
+            #     m = 0
+            #     if m1[i, k] ==  0:
+            #         continue
                 
-                w = g1.vertices[k]
-                for o in range(n2):
-                    if m2[j, o] == 0:
-                        continue
+            #     w = g1.vertices[k]
+            #     for o in range(n2):
+            #         if m2[j, o] == 0:
+            #             continue
                 
-                    x = g2.vertices[o]
-                    m = abs(
-                        np.linalg.norm( np.array(u.coords) - np.array(w.coords)) -
-                        np.linalg.norm( np.array(v.coords) - np.array(x.coords))
-                    )
-                    l2 = max(l2, m)
+            #         x = g2.vertices[o]
+            #         m = abs(
+            #             np.linalg.norm( np.array(u.coords) - np.array(w.coords)) -
+            #             np.linalg.norm( np.array(v.coords) - np.array(x.coords))
+            #         )
+            #         l2 = max(l2, m)
             
             weight += 0.5 * C_E * l1
             G.add_edge(u.label, v.label, weight = round( weight * multiplier) )

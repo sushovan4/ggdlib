@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from functools import cmp_to_key
+import graphlib
 import numpy as np
 import networkx as nx
 
@@ -110,6 +111,18 @@ class Graph:
 
         return G
 
+    def sortN(self, points):
+        if len(points) < self.n:
+            raise Exception("Not enough sites.")
+        vertices = [None] * len(points)
+        points = np.copy(points)
+
+        for u in self.vertices:
+            v, id = nearestNeighbor(u, points)
+            vertices[id] = u
+            points[id] = None
+        self.vertices = [u for u in vertices if u is not None]
+
 class Point:
     ''' Supporting class for storing coordinates and labels of points.
     e.g:
@@ -136,14 +149,13 @@ class Point:
         ''' Returns true if point is close to p. '''
         if self.d != p.d:
             return False
-
-        def distance(p1, p2):
-            p1 = np.array(p1.coords)
-            p2 = np.array(p2.coords)
-            return np.linalg.norm(p1 - p2)
-
         return distance(self, p) < eps
     
+def distance(p1, p2):
+    p1 = np.array(p1.coords)
+    p2 = np.array(p2.coords)
+    return np.linalg.norm(p1 - p2)
+
 def compare(u: Point, v: Point):
     if u.coords[0] < v.coords[0]:
         return -1
@@ -155,3 +167,17 @@ def compare(u: Point, v: Point):
         elif u.coords[1] > v.coords[1]:
             return 1        
     return 0
+
+def nearestNeighbor(p, points):
+    neighbor = None
+    idx = None
+    dist = np.inf
+    for i, v in enumerate(points):
+        if v == None:
+            continue
+        d = distance(p, v)
+        if d < dist:
+            neighbor = v
+            dist = d
+            idx = i
+    return (neighbor, idx)

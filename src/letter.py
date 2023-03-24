@@ -46,7 +46,7 @@ def letter(distortion, C_V, C_E, multiplier):
                     for v1 in v.values():
                         if v1 != 0 and v1 != multiplier:
                             print(flow)
-    print(C_V, C_E, n_successes / n_checks * 100)
+    
     return n_successes / n_checks * 100
 
 def gxl2Graph(gxl, prefix = ''):
@@ -75,7 +75,8 @@ def main():
             C_V = i / 10.0 * 5
             C_E = j / 10.0 * 5
             print(C_V, C_E, letter('LOW', C_V, C_E, 10000))
-    #C_V, C_E = 2, 1
+    
+    #C_V, C_E = 2.5, 1
     #letter('LOW', C_V, C_E, 10000)
 
 if __name__ == "__main__":

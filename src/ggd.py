@@ -29,7 +29,7 @@ def ggd(g1: Graph, g2: Graph, C_V, C_E):
                 cost += C_V * np.linalg.norm(v1[i]- v2[j])
 
         for i in range(n1):
-            for j in range(n1):                
+            for j in range(i + 1, n1):                
                 if m1[i, j] == 1:
                     if pi[i] == -1 or pi[j] == -1 or m2[pi[i], pi[j]] == 0:
                         # Edge deletion from g1
@@ -42,11 +42,12 @@ def ggd(g1: Graph, g2: Graph, C_V, C_E):
                         )
 
         for i in range(n2):
-            for j in range(n2):
+            for j in range(i + 1, n2):
                 if m2[i, j] == 1:    
                     if i not in pi or j not in pi or m1[np.where(pi == i)[0][0], np.where(pi == j)[0][0]] == 0:
                         # Edge deletion from g2
                         cost += C_E * np.linalg.norm(v2[i] - v2[j])
+        #print(cost, pi)
         return cost
  
     # Define the recursion
