@@ -9,7 +9,8 @@ def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier, sort = False):
     if sort:
         if g1.n < g2.n:
             g1, g2 = g2, g1
-            g2.sortNN(g1.vertices)
+        g2.sortN(g1.vertices)
+    
     # todo: check if the graphs live in the same ambient
     n1, n2 = g1.n, g2.n
     m1, m2 = g1.adjacency(), g2.adjacency()

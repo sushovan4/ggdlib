@@ -18,7 +18,7 @@ class Letter:
         
         return sorted(match, key = lambda x: x[1])
 
-    def test(self, distortion = 'LOW'):
+    def test(self, distortion = 'LOW', k = 1):
         n, s = 0, 0
         models = [(f[0], gxl2Graph(json.load(open('data/Letter/PROTOTYPE/' + f)), f[0])) for f in os.listdir('data/Letter/PROTOTYPE/')]
         
@@ -33,7 +33,7 @@ class Letter:
             match.sort(key = lambda x: x[1])
             n += 1
 
-            if(file[0] == match[0][0]):
+            if file[0] in [ m[0] for m in match[0:k]]:
                 s += 1
                 # print("S", file, match)
             else:
@@ -101,10 +101,11 @@ def main():
     #    for j in range(2,10):
     #        C_V = i / 10.0 * 5
     #        C_E = j / 10.0 * 5
-    #        print(C_V, C_E, letter('LOW', C_V, C_E, 10000, True))
+    #        l = Letter(C_V, C_E, sort = True)
+    #        print(C_V, C_E, l.test('LOW', k = 3))
     
-    l = Letter(C_V = 1, C_E = 1, sort = True)
-    l.test('LOW')
+    l = Letter(4, 0, sort = True)
+    l.test('LOW', k = 3)
 
 if __name__ == "__main__":
     main()
