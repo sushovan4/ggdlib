@@ -1,0 +1,3012 @@
+{
+	"GraphCollection": {
+		"fingerprints": {
+			"print": [
+				{
+					"_file": "AP1_0050.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0051.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0052.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0053.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0054.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0055.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0056.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0057.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0058.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0059.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0060.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0061.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0062.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0063.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0064.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0065.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0066.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0067.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0068.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0069.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0070.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0071.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0072.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0073.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0074.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0075.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0076.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0077.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0078.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0079.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0080.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0081.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0082.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0083.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0084.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0085.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0086.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0087.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0088.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0089.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0090.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0091.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0092.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0093.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0094.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0095.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0096.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0097.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0098.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "AP1_0099.gxl",
+					"_class": "A"
+				},
+				{
+					"_file": "EP1_0050.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0051.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0052.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0053.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0054.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0055.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0056.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0057.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0058.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0059.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0060.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0061.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0062.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0063.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0064.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0065.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0066.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0067.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0068.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0069.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0070.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0071.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0072.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0073.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0074.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0075.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0076.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0077.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0078.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0079.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0080.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0081.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0082.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0083.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0084.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0085.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0086.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0087.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0088.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0089.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0090.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0091.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0092.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0093.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0094.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0095.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0096.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0097.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0098.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "EP1_0099.gxl",
+					"_class": "E"
+				},
+				{
+					"_file": "FP1_0050.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0051.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0052.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0053.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0054.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0055.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0056.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0057.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0058.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0059.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0060.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0061.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0062.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0063.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0064.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0065.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0066.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0067.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0068.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0069.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0070.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0071.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0072.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0073.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0074.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0075.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0076.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0077.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0078.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0079.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0080.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0081.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0082.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0083.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0084.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0085.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0086.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0087.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0088.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0089.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0090.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0091.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0092.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0093.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0094.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0095.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0096.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0097.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0098.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "FP1_0099.gxl",
+					"_class": "F"
+				},
+				{
+					"_file": "HP1_0050.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0051.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0052.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0053.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0054.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0055.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0056.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0057.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0058.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0059.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0060.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0061.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0062.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0063.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0064.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0065.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0066.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0067.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0068.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0069.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0070.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0071.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0072.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0073.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0074.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0075.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0076.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0077.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0078.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0079.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0080.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0081.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0082.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0083.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0084.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0085.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0086.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0087.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0088.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0089.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0090.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0091.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0092.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0093.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0094.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0095.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0096.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0097.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0098.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "HP1_0099.gxl",
+					"_class": "H"
+				},
+				{
+					"_file": "IP1_0050.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0051.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0052.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0053.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0054.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0055.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0056.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0057.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0058.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0059.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0060.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0061.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0062.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0063.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0064.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0065.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0066.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0067.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0068.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0069.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0070.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0071.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0072.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0073.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0074.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0075.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0076.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0077.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0078.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0079.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0080.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0081.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0082.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0083.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0084.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0085.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0086.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0087.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0088.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0089.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0090.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0091.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0092.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0093.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0094.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0095.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0096.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0097.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0098.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "IP1_0099.gxl",
+					"_class": "I"
+				},
+				{
+					"_file": "KP1_0050.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0051.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0052.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0053.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0054.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0055.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0056.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0057.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0058.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0059.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0060.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0061.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0062.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0063.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0064.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0065.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0066.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0067.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0068.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0069.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0070.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0071.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0072.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0073.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0074.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0075.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0076.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0077.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0078.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0079.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0080.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0081.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0082.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0083.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0084.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0085.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0086.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0087.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0088.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0089.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0090.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0091.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0092.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0093.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0094.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0095.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0096.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0097.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0098.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "KP1_0099.gxl",
+					"_class": "K"
+				},
+				{
+					"_file": "LP1_0050.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0051.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0052.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0053.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0054.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0055.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0056.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0057.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0058.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0059.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0060.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0061.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0062.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0063.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0064.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0065.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0066.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0067.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0068.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0069.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0070.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0071.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0072.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0073.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0074.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0075.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0076.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0077.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0078.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0079.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0080.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0081.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0082.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0083.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0084.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0085.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0086.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0087.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0088.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0089.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0090.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0091.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0092.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0093.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0094.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0095.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0096.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0097.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0098.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "LP1_0099.gxl",
+					"_class": "L"
+				},
+				{
+					"_file": "MP1_0050.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0051.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0052.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0053.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0054.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0055.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0056.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0057.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0058.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0059.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0060.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0061.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0062.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0063.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0064.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0065.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0066.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0067.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0068.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0069.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0070.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0071.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0072.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0073.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0074.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0075.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0076.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0077.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0078.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0079.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0080.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0081.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0082.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0083.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0084.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0085.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0086.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0087.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0088.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0089.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0090.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0091.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0092.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0093.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0094.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0095.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0096.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0097.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0098.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "MP1_0099.gxl",
+					"_class": "M"
+				},
+				{
+					"_file": "NP1_0050.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0051.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0052.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0053.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0054.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0055.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0056.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0057.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0058.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0059.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0060.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0061.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0062.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0063.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0064.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0065.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0066.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0067.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0068.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0069.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0070.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0071.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0072.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0073.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0074.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0075.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0076.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0077.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0078.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0079.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0080.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0081.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0082.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0083.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0084.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0085.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0086.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0087.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0088.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0089.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0090.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0091.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0092.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0093.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0094.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0095.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0096.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0097.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0098.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "NP1_0099.gxl",
+					"_class": "N"
+				},
+				{
+					"_file": "TP1_0050.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0051.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0052.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0053.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0054.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0055.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0056.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0057.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0058.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0059.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0060.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0061.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0062.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0063.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0064.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0065.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0066.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0067.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0068.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0069.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0070.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0071.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0072.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0073.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0074.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0075.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0076.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0077.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0078.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0079.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0080.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0081.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0082.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0083.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0084.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0085.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0086.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0087.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0088.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0089.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0090.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0091.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0092.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0093.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0094.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0095.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0096.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0097.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0098.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "TP1_0099.gxl",
+					"_class": "T"
+				},
+				{
+					"_file": "VP1_0050.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0051.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0052.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0053.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0054.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0055.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0056.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0057.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0058.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0059.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0060.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0061.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0062.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0063.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0064.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0065.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0066.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0067.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0068.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0069.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0070.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0071.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0072.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0073.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0074.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0075.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0076.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0077.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0078.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0079.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0080.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0081.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0082.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0083.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0084.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0085.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0086.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0087.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0088.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0089.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0090.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0091.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0092.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0093.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0094.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0095.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0096.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0097.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0098.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "VP1_0099.gxl",
+					"_class": "V"
+				},
+				{
+					"_file": "WP1_0050.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0051.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0052.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0053.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0054.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0055.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0056.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0057.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0058.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0059.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0060.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0061.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0062.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0063.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0064.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0065.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0066.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0067.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0068.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0069.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0070.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0071.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0072.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0073.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0074.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0075.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0076.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0077.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0078.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0079.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0080.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0081.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0082.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0083.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0084.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0085.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0086.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0087.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0088.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0089.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0090.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0091.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0092.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0093.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0094.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0095.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0096.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0097.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0098.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "WP1_0099.gxl",
+					"_class": "W"
+				},
+				{
+					"_file": "XP1_0050.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0051.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0052.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0053.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0054.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0055.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0056.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0057.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0058.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0059.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0060.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0061.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0062.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0063.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0064.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0065.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0066.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0067.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0068.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0069.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0070.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0071.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0072.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0073.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0074.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0075.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0076.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0077.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0078.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0079.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0080.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0081.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0082.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0083.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0084.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0085.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0086.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0087.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0088.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0089.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0090.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0091.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0092.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0093.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0094.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0095.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0096.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0097.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0098.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "XP1_0099.gxl",
+					"_class": "X"
+				},
+				{
+					"_file": "YP1_0050.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0051.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0052.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0053.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0054.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0055.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0056.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0057.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0058.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0059.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0060.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0061.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0062.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0063.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0064.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0065.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0066.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0067.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0068.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0069.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0070.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0071.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0072.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0073.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0074.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0075.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0076.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0077.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0078.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0079.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0080.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0081.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0082.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0083.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0084.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0085.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0086.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0087.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0088.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0089.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0090.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0091.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0092.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0093.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0094.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0095.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0096.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0097.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0098.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "YP1_0099.gxl",
+					"_class": "Y"
+				},
+				{
+					"_file": "ZP1_0050.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0051.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0052.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0053.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0054.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0055.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0056.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0057.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0058.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0059.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0060.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0061.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0062.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0063.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0064.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0065.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0066.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0067.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0068.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0069.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0070.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0071.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0072.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0073.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0074.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0075.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0076.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0077.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0078.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0079.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0080.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0081.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0082.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0083.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0084.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0085.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0086.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0087.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0088.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0089.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0090.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0091.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0092.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0093.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0094.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0095.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0096.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0097.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0098.gxl",
+					"_class": "Z"
+				},
+				{
+					"_file": "ZP1_0099.gxl",
+					"_class": "Z"
+				}
+			],
+			"_base": "/scratch/mneuhaus/progs/letter-database/automatic/0.1",
+			"_classmodel": "henry5",
+			"_count": "750"
+		},
+		"_xmlns:ns": "http://www.iam.unibe.ch/%7Emneuhaus/FAN/1.0"
+	}
+}

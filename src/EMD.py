@@ -5,15 +5,12 @@ import numpy as np
 import networkx as nx
 from graph import Graph
 
-def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier):
-    if g1.n < g2.n:
-        g1, g2 = g2, g1
+def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier, sort = False):
+    if sort:
+        if g1.n < g2.n:
+            g1, g2 = g2, g1
+            g2.sortNN(g1.vertices)
     # todo: check if the graphs live in the same ambient
-
-    # Order lexicographically
-    g2.sortN(g1.vertices)
-
-
     n1, n2 = g1.n, g2.n
     m1, m2 = g1.adjacency(), g2.adjacency()
 
@@ -35,47 +32,33 @@ def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier):
             v = g2.vertices[j]
             # Compute ground cost
             weight = C_V * np.linalg.norm( np.array(u.coords) - np.array(v.coords))
-            l1, l2 = 0, 0
+            l = 0
 
-            for k in range(n1):
-                m = 0
-                w = g1.vertices[k]
+            for k in range(min(n1, n2)):                
+                if k >= n1:
+                    if m2[j, k] ==  1:
+                        x = g2.vertices[k]
+                        #l += np.linalg.norm( np.array(v.coords) - np.array(x.coords))
+                    continue
+
                 if k >= n2:
                     if m1[i, k] ==  1:
-                        m = np.linalg.norm( np.array(u.coords) - np.array(w.coords))
+                        w = g1.vertices[k]
+                        #l += np.linalg.norm( np.array(u.coords) - np.array(w.coords))
                     continue
                 
-                x = g2.vertices[k]
+                w, x = g1.vertices[k], g2.vertices[k]
                 if m1[i, k] == 1 and m2[j, k] == 1:
-                    m = abs(
+                    l += abs(
                         np.linalg.norm( np.array(u.coords) - np.array(w.coords)) -
                         np.linalg.norm( np.array(v.coords) - np.array(x.coords))
                     )
                 elif m1[i, k] == 0 and m2[j, k] == 1:
-                    m = np.linalg.norm( np.array(v.coords) - np.array(x.coords))
+                    l += np.linalg.norm( np.array(v.coords) - np.array(x.coords))
                 elif m1[i, k] == 1 and m2[j, k] == 0:
-                    m = np.linalg.norm( np.array(u.coords) - np.array(w.coords))
-
-                l1 += m 
-
-            # for k in range(n1):
-            #     m = 0
-            #     if m1[i, k] ==  0:
-            #         continue
-                
-            #     w = g1.vertices[k]
-            #     for o in range(n2):
-            #         if m2[j, o] == 0:
-            #             continue
-                
-            #         x = g2.vertices[o]
-            #         m = abs(
-            #             np.linalg.norm( np.array(u.coords) - np.array(w.coords)) -
-            #             np.linalg.norm( np.array(v.coords) - np.array(x.coords))
-            #         )
-            #         l2 = max(l2, m)
+                    l += np.linalg.norm( np.array(u.coords) - np.array(w.coords))
             
-            weight += 0.5 * C_E * l1
+            weight += 0.5 * C_E * l
             G.add_edge(u.label, v.label, weight = round( weight * multiplier) )
     
     for j in range(n2):

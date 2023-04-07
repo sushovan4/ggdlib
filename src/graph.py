@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from functools import cmp_to_key
-import graphlib
 import numpy as np
 import networkx as nx
 
@@ -114,6 +113,16 @@ class Graph:
     def sortN(self, points):
         if len(points) < self.n:
             raise Exception("Not enough sites.")
+        vertices = np.copy(self.vertices)
+
+        for i in range(self.n):
+            v, id = nearestNeighbor(points[i], vertices)
+            self.vertices[i] = v
+            vertices[id] = None
+
+    def sortNN(self, points):
+        if len(points) < self.n:
+            raise Exception("Not enough sites.")
         vertices = [None] * len(points)
         points = np.copy(points)
 
@@ -122,6 +131,11 @@ class Graph:
             vertices[id] = u
             points[id] = None
         self.vertices = [u for u in vertices if u is not None]
+    def vol(self):
+        volume = 0
+        for e in self.edges:
+            volume += distance(e[0], e[1])
+        return volume
 
 class Point:
     ''' Supporting class for storing coordinates and labels of points.

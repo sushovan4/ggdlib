@@ -1,53 +1,80 @@
-import os
 import json
 from EMD import GGMD
-from ggd import ggd
 from graph import Point, Graph
+from functools import cmp_to_key
+import os
 
-def letter(distortion, C_V, C_E, multiplier):
-    PROTOTYPE = []
-    n_checks = 0
-    n_successes = 0 
+class Letter:
     
-    prototype_path = 'data/PROTOTYPE/'
-    source_path = 'data/Letter/json/' + distortion + '/'
-    
-    for file in os.listdir(prototype_path):
-        data = open(prototype_path + file)
-        gxl = json.load(data)
-        PROTOTYPE.append((file[0], gxl2Graph(gxl, file[0])))
+    def __init__(self, C_V = 1.0, C_E = 1.0, multiplier = 10000, sort = False):
+        self.C_V = C_V
+        self.C_E = C_E
+        self.multiplier = multiplier
+        self.sort = sort            
 
-    for file in os.listdir(source_path):
-        # todo: filter only json files
-        if file.split('.')[1] != 'json':
-            continue
-        data = open(source_path + file)
-        gxl = json.load(data)
-        g = gxl2Graph(gxl)
-        match = {}
-        for proto in PROTOTYPE:
-            d, flow, A = GGMD(g, proto[1], C_V, C_E, multiplier)  
-            # d, flow = ggd(g, proto[1], C_V, C_E)  
+    def findModels(self, graph):
+        models = [(f[0], gxl2Graph(json.load(open('data/Letter/PROTOTYPE/' + f)), f[0])) for f in os.listdir('data/Letter/PROTOTYPE/')]
+        match =  [ (m[0], GGMD(graph, m[1], self.C_V, self.C_E, self.multiplier, self.sort)[0]) for m in models]
+        
+        return sorted(match, key = lambda x: x[1])
+
+    def test(self, distortion = 'LOW'):
+        n, s = 0, 0
+        models = [(f[0], gxl2Graph(json.load(open('data/Letter/PROTOTYPE/' + f)), f[0])) for f in os.listdir('data/Letter/PROTOTYPE/')]
+        
+        for file in os.listdir('data/Letter/json/' + distortion + '/'):
+            if file.split('.')[1] != 'json' or file.split('.')[0] in ['test', 'train', 'validation']:
+                continue
             
-            match[proto[0]] = d
-        match = sorted(match.items(), key=lambda x: x[1])
-        n_checks += 1
-        if(file[0] == match[0][0]):
-            n_successes += 1
-            # print("S", file, match)
-        else:
-            pass
-            #print("F", file, match)
+            data = open('data/Letter/json/' + distortion + '/' + file)
+            gxl = json.load(data)
+            g = gxl2Graph(gxl)
+            match =  [ (m[0], GGMD(g, m[1], self.C_V, self.C_E, self.multiplier, self.sort)[0]) for m in models]
+            match.sort(key = lambda x: x[1])
+            n += 1
 
-
-        for k, v in flow.items():
-            if k != "eps1" and k != "eps2":
-                if len(v) != 0:
-                    for v1 in v.values():
-                        if v1 != 0 and v1 != multiplier:
-                            print(flow)
+            if(file[0] == match[0][0]):
+                s += 1
+                # print("S", file, match)
+            else:
+                pass
+                #print("F", file, match)
+            print(s / n * 100.0)
+        return s / n * 100.0
     
-    return n_successes / n_checks * 100
+def letter(C_V, C_E, multiplier, sort = True):
+    def compare(file1, file2):
+        data = open('data/Letter/json/LOW/' + file1["_file"].split('.')[0] + '.json' )            
+        g1 = gxl2Graph(json.load(data), 'u')
+
+        data = open('data/Letter/json/LOW/' + file2["_file"].split('.')[0] + '.json' )            
+        g2 = gxl2Graph(json.load(data), 'v')
+
+        d1, d2 = GGMD(g1, g, C_V, C_E, multiplier, sort)[0], GGMD(g2, g, C_V, C_E, multiplier, sort)[0]
+        
+        if d1 < d2:
+            return -1
+        elif d1 > d2:
+            return 1
+        else:
+            return 0
+        
+    source_file = 'data/Letter/json/LOW/train.json'
+    data = open(source_file)
+    files = json.load(data)["GraphCollection"]["fingerprints"]["print"]
+        
+    for file in files:
+        data = open('data/Letter/json/LOW/' + file["_file"].split('.')[0] + '.json' )
+        g = gxl2Graph(json.load(data))
+
+        nn = sorted(files, key = cmp_to_key(compare))
+
+        file["_classes"] = [ file["_class"] for file in nn ] 
+
+
+        with open("nn_output.json", "w") as outfile:
+            outfile.write(json.dumps(files))
+
 
 def gxl2Graph(gxl, prefix = ''):
     vertices = []
@@ -70,14 +97,14 @@ def gxl2Graph(gxl, prefix = ''):
 
 
 def main():
-    for i in range(10):
-        for j in range(10):
-            C_V = i / 10.0 * 5
-            C_E = j / 10.0 * 5
-            print(C_V, C_E, letter('LOW', C_V, C_E, 10000))
+    #for i in range(2,10):
+    #    for j in range(2,10):
+    #        C_V = i / 10.0 * 5
+    #        C_E = j / 10.0 * 5
+    #        print(C_V, C_E, letter('LOW', C_V, C_E, 10000, True))
     
-    #C_V, C_E = 2.5, 1
-    #letter('LOW', C_V, C_E, 10000)
+    l = Letter(C_V = 1, C_E = 1, sort = True)
+    l.test('LOW')
 
 if __name__ == "__main__":
     main()
