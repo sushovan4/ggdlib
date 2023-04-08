@@ -3,24 +3,49 @@ from EMD import GGMD
 from graph import Point, Graph
 from functools import cmp_to_key
 import os
+from globals import ROOT_DIR
+
+def gxl2Graph(gxl, prefix = ''):
+    vertices = []
+    edges = []
+    for n in gxl["gxl"]["graph"][0]["node"]:
+        out = {}  
+        out["id"] = prefix + n["$"]["id"]
+        for v in n["attr"]:
+            out[v["$"]["name"]] = float(v["float"][0])
+
+        vertices.append( Point((out["x"], out["y"]), out["id"]) )
+    
+    if "edge" in gxl["gxl"]["graph"][0]:        
+        for e in gxl["gxl"]["graph"][0]["edge"]:
+            fr = next( filter(lambda p: p.label == prefix + e["$"]["from"], vertices) )
+            to = next( filter(lambda p: p.label == prefix + e["$"]["to"], vertices) )
+            edges.append((fr, to))
+
+    return Graph(vertices, edges)
+
+proto_path = os.path.join(ROOT_DIR, 'data', 'Letter', 'PROTOTYPE')
+models = [(f[0], gxl2Graph(json.load(open(os.path.join(proto_path, f))), f[0])) for f in os.listdir(proto_path)]
+
 
 class Letter:
-    
+
     def __init__(self, C_V = 1.0, C_E = 1.0, multiplier = 10000, sort = False):
         self.C_V = C_V
         self.C_E = C_E
         self.multiplier = multiplier
         self.sort = sort            
 
-    def findModels(self, graph):
-        models = [(f[0], gxl2Graph(json.load(open('data/Letter/PROTOTYPE/' + f)), f[0])) for f in os.listdir('data/Letter/PROTOTYPE/')]
+    def classify(self, graph):
+        return self.findModels(graph)[0][0]
+    
+    def findModels(self, graph):    
         match =  [ (m[0], GGMD(graph, m[1], self.C_V, self.C_E, self.multiplier, self.sort)[0]) for m in models]
         
         return sorted(match, key = lambda x: x[1])
 
     def test(self, distortion = 'LOW', k = 1):
         n, s = 0, 0
-        models = [(f[0], gxl2Graph(json.load(open('data/Letter/PROTOTYPE/' + f)), f[0])) for f in os.listdir('data/Letter/PROTOTYPE/')]
         
         for file in os.listdir('data/Letter/json/' + distortion + '/'):
             if file.split('.')[1] != 'json' or file.split('.')[0] in ['test', 'train', 'validation']:
@@ -29,11 +54,10 @@ class Letter:
             data = open('data/Letter/json/' + distortion + '/' + file)
             gxl = json.load(data)
             g = gxl2Graph(gxl)
-            match =  [ (m[0], GGMD(g, m[1], self.C_V, self.C_E, self.multiplier, self.sort)[0]) for m in models]
-            match.sort(key = lambda x: x[1])
+            matches = self.findModels(g)
             n += 1
 
-            if file[0] in [ m[0] for m in match[0:k]]:
+            if file[0] in [ m[0] for m in matches[0:k]]:
                 s += 1
                 # print("S", file, match)
             else:
@@ -76,24 +100,6 @@ def letter(C_V, C_E, multiplier, sort = True):
             outfile.write(json.dumps(files))
 
 
-def gxl2Graph(gxl, prefix = ''):
-    vertices = []
-    edges = []
-    for n in gxl["gxl"]["graph"][0]["node"]:
-        out = {}  
-        out["id"] = prefix + n["$"]["id"]
-        for v in n["attr"]:
-            out[v["$"]["name"]] = float(v["float"][0])
-
-        vertices.append( Point((out["x"], out["y"]), out["id"]) )
-    
-    if "edge" in gxl["gxl"]["graph"][0]:        
-        for e in gxl["gxl"]["graph"][0]["edge"]:
-            fr = next( filter(lambda p: p.label == prefix + e["$"]["from"], vertices) )
-            to = next( filter(lambda p: p.label == prefix + e["$"]["to"], vertices) )
-            edges.append((fr, to))
-
-    return Graph(vertices, edges)
 
 
 def main():
@@ -104,7 +110,7 @@ def main():
     #        l = Letter(C_V, C_E, sort = True)
     #        print(C_V, C_E, l.test('LOW', k = 3))
     
-    l = Letter(4, 0, sort = True)
+    l = Letter(3.7, 1.0, sort = True)
     l.test('LOW', k = 3)
 
 if __name__ == "__main__":
