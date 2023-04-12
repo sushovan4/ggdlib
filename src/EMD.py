@@ -69,7 +69,7 @@ def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier, sort = False):
             if m2[j, k] == 1:
                 v =  g2.vertices[k]
                 l += np.linalg.norm( np.array(u.coords) - np.array(v.coords) )
-        weight = 0.5 * C_E * l
+        weight = C_E * l
         G.add_edge("eps1", u.label, weight = round( weight * multiplier))
 
     for i in range(n1):
@@ -79,7 +79,7 @@ def GGMD(g1: Graph, g2: Graph, C_V, C_E, multiplier, sort = False):
             if m1[i, k] == 1:
                 v =  g1.vertices[k]
                 l += np.linalg.norm( np.array(u.coords) - np.array(v.coords) )
-        weight = 0.5 * C_E * l
+        weight = C_E * l
         G.add_edge(u.label, "eps2", weight = round( weight * multiplier))
     
     G.add_edge("eps1", "eps2", weight = 0)
