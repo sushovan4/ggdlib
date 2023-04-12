@@ -109,9 +109,9 @@ def main():
     #        l = Letter(C_V, C_E, sort = True)
     #        print(C_V, C_E, l.test('LOW', k = 3))
     
-    l = Letter(4.6, 1, sort = True)
+    l = Letter(4, 1, sort = True)
     #l.train()
-    l.test('LOW', k = 5)
+    l.test('LOW', k = 3)
 
 if __name__ == "__main__":
     main()
