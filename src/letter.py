@@ -1,5 +1,5 @@
 import json
-from EMD import GGMD
+from GMD import GMD
 from graph import Point, Graph
 from functools import cmp_to_key
 import os
@@ -39,7 +39,7 @@ class Letter:
         return self.findModels(graph)[0][0]
     
     def findModels(self, graph):    
-        match =  [ (m[0], GGMD(graph, m[1], self.C_V, self.C_E, self.multiplier, self.sort)[0]) for m in models]
+        match =  [ (m[0], GMD(graph, m[1], self.C_V, self.C_E, self.multiplier, self.sort)[0]) for m in models]
         
         return sorted(match, key = lambda x: x[1])
 
@@ -63,7 +63,7 @@ class Letter:
                 pass
                 #print("F", file, match)
             print(s / n * 100.0)
-        return s / n * 100.0
+        return
     
     def train(self, distortion = 'LOW'):
         train_source = os.path.join(ROOT_DIR, 'data', 'Letter', 'json', distortion, 'train.json')
@@ -76,8 +76,8 @@ class Letter:
             data = open('data/Letter/json/LOW/' + file2["_file"].split('.')[0] + '.json' )            
             g2 = gxl2Graph(json.load(data), 'v')
 
-            d1 = GGMD(g1, g, C_V = self.C_V, C_E = self.C_E, multiplier = self.multiplier, sort = self.sort)[0]
-            d2 = GGMD(g2, g, C_V = self.C_V, C_E = self.C_E, multiplier = self.multiplier, sort = self.sort)[0]
+            d1 = GMD(g1, g, C_V = self.C_V, C_E = self.C_E, multiplier = self.multiplier, sort = self.sort)[0]
+            d2 = GMD(g2, g, C_V = self.C_V, C_E = self.C_E, multiplier = self.multiplier, sort = self.sort)[0]
         
             if d1 < d2:
                 return -1
@@ -98,20 +98,19 @@ class Letter:
             with open("nn_output.json", "w") as outfile:
                 outfile.write(json.dumps(files))
 
-
-
-
 def main():
-    #for i in range(2,10):
+    # for i in range(2,10):
     #    for j in range(2,10):
+    #        if i <= j:
+    #            continue
     #        C_V = i / 10.0 * 5
     #        C_E = j / 10.0 * 5
     #        l = Letter(C_V, C_E, sort = True)
-    #        print(C_V, C_E, l.test('LOW', k = 3))
+    #        l.test('LOW', k = 3)
     
-    l = Letter(4, 1, sort = True)
+    l = Letter(4, 1, sort = False)
+    l.test('LOW', k = 1)
     #l.train()
-    l.test('LOW', k = 3)
 
 if __name__ == "__main__":
     main()
