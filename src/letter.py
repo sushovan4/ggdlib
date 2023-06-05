@@ -109,7 +109,7 @@ def main():
     #        l.test('LOW', k = 3)
     
     l = Letter(4, 1, sort = False)
-    l.test('LOW', k = 1)
+    l.test('LOW', k = 3)
     #l.train()
 
 if __name__ == "__main__":

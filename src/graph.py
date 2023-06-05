@@ -94,6 +94,28 @@ class Graph:
             mat[j, i] = 1
         return mat
 
+    def adjacency1(self):
+        mat = np.zeros((self.n, self.n))
+        for edge in self.edges:
+            u1, u2 = edge
+            i = self.indexOf(u1)
+            j = self.indexOf(u2)
+            
+            mat[i, j] = distance(u1, u2)
+            mat[j, i] = distance(u1, u2)
+        return mat
+    
+    def PDD(self):
+        m = self.adjacency()
+        n = np.zeros((self.n, self.n - 1))
+        for i in range(self.n):
+            for j in range(self.n):
+                if(j < i):
+                    n[i, j] = m[i, j] * distance(self.vertices[i], self.vertices[j])
+                if(j > i):
+                    n[i, j - 1] = m[i, j] * distance(self.vertices[i], self.vertices[j])
+        return n
+
     def indexOf(self, v):
         for index, vertex in enumerate(self.vertices):
             if v.equals(vertex):
@@ -131,10 +153,13 @@ class Graph:
             vertices[id] = u
             points[id] = None
         self.vertices = [u for u in vertices if u is not None]
-    def vol(self):
+    
+    def vol(self, i):
         volume = 0
-        for e in self.edges:
-            volume += distance(e[0], e[1])
+        m = self.adjacency()
+        for j in range(self.n):
+            if(m[i, j] == 1):
+                volume += distance(self.vertices[i], self.vertices[j])
         return volume
 
 class Point:
